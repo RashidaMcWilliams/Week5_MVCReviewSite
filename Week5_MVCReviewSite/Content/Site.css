@@ -22,3 +22,24 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.jumbotron {
+    font-family: 'Permanent Marker', cursive;
+}
+
+.jumbotron>h1 {
+    font-size: 56px;
+}
+
+.jumbotron>p {
+    font-size: 28px;
+}
+
+.tagline {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 34px;
+}
+
+/*.btn .btn-default .btn-lg {
+    color: #000000;
+}*/
