@@ -35,16 +35,24 @@ textarea {
     color: #3281FF;
 }*/
 
+.div.container.body-content {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
 .jumbotron {
     font-family: 'Permanent Marker', cursive;
+    background-color: #FFFFFF;
 }
 
 .jumbotron>h1 {
     font-size: 56px;
+    text-align: center;
 }
 
 .jumbotron>p {
     font-size: 28px;
+    text-align: center;
 }
 
 .tagline {
@@ -53,5 +61,5 @@ textarea {
 }
 
 /*.btn .btn-default .btn-lg {
-    color: #000000;
+    background-color: #5A6372;
 }*/
