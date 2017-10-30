@@ -4,63 +4,78 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
+<h2 class="tagline">Your Thoughts</h2>
 
-<div>
-    <h4>Review</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Category.Type)
-        </dt>
+<div class="cards container-fluid">
+    <div class="row">
+        <div class="col-xs-6">
+            <h2>@Html.DisplayNameFor(model => model.Category.Type): @Html.DisplayFor(model => model.Category.Type)</h2>
+            <h3>@Html.DisplayFor(model => model.Title)</h3>
+            <h4>@Html.DisplayFor(model => model.UserName)</h4>
+            <p>@Html.DisplayNameFor(model => model.PublishDate): @Html.DisplayFor(model => model.PublishDate)</p>
+            <p>@Html.DisplayFor(model => model.Score)</p>
+            <p>@Html.DisplayFor(model => model.Content)</p>
+            <br />
+            <p>
+                @Html.ActionLink("More Opinions", "Index")
+            </p>
 
-        <dd>
-            @Html.DisplayFor(model => model.Category.Type)
-        </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.UserName)
-        </dt>
+        </div>
+    </div>
+</div>          
+            @*<dl class="dl-horizontal">
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Category.Type)
+                    </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.UserName)
-        </dd>
+                    <dd>
+                        @Html.DisplayFor(model => model.Category.Type)
+                    </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Title)
-        </dt>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.UserName)
+                    </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Title)
-        </dd>
+                    <dd>
+                        @Html.DisplayFor(model => model.UserName)
+                    </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Content)
-        </dt>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Title)
+                    </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Content)
-        </dd>
+                    <dd>
+                        @Html.DisplayFor(model => model.Title)
+                    </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.PublishDate)
-        </dt>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Content)
+                    </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.PublishDate)
-        </dd>
+                    <dd>
+                        @Html.DisplayFor(model => model.Content)
+                    </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Score)
-        </dt>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.PublishDate)
+                    </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Score)
-        </dd>
+                    <dd>
+                        @Html.DisplayFor(model => model.PublishDate)
+                    </dd>
 
-    </dl>
-</div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.ReviewID }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Score)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Score)
+                    </dd>
+
+                </dl>*@
+
+        @*<p>
+            @Html.ActionLink("Edit", "Edit", new { id = Model.ReviewID }) |
+            @Html.ActionLink("Back to List", "Index")
+        </p>*@
